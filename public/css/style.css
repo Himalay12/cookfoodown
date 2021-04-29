@@ -1,12 +1,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    background-image: linear-gradient(to right, #FBDB89, #F48982);
     padding: 0;
     margin: 0;
 }
-/* body *{
-    
-} */
 
 /*global*/
 a {
@@ -22,8 +19,8 @@ ul{
     padding: 0;
 }
 svg{
-    width: 10px;
-    height: 10px;
+    width: 25px;
+    height: 25px;
     
 }
 .btn-tiny {
@@ -65,82 +62,58 @@ button{
 header, .navigation{
     position: fixed;
     top: 0;
-    background-color: #F9F5F3;
+    background-color: white;
     height: 50px; width: 100%;
 }
-.navigation{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-/*logos*/
-/*Search*/
-.search form{
-    display: flex;
-    flex: row;
-}
-.search form *{
-    outline: none;
-    font-size: 1rem;
-    border-radius: 30px;
-    border: none;
-}
-.search input{
-    font-size: .8rem;
-    width: 40vw;
-    height: 30px;
-    padding-left: 10px;
-}
-.search button{
-    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
-    width: 18vw;
-    height: 32px;
-    color: white;
-    position: absolute;
-    left: 58%;
-}
-/* .search .input:visited {
-    transform: translate(0, -5%);
-} */
-.search button:hover{
-    width: 19vw;
-    height: 35px;
-    transition: all .2s;
-}
-
-/*My shopping List*/
-
 
 /*Wishlist*/
-.Wishlist{
+.Wishlist, .myShoppingList, .searchbtn{
     display: inline-block;
     margin: 0;
     padding: 0;
-}
-.Wishlist .recipe__love{
     position: absolute;
-    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
-    top:0; right: 0;
-    height: 50px;
-    width: 50px;
-    max-height: 100px;
+    top:0;
 }
+.searchbtn{ right: 100px; }
+.myShoppingList{ right: 50px; }
+.Wishlist{ right: 0; }
+.navigation button{
+    height: 50px; width: 50px;
+    background-image: linear-gradient(to right, #FBDB89, #F48982);
+}
+.search{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.search form{
+    margin: 0; padding: 0;
+    outline: none;
+}
+.search form input{
+    height: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+.search form button{
+    height: 30px;
+    border-radius: 20px;
+    transform: translateX(-55px);
+}
+
 .likes__panel{
-    display: none;
-    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
-    position: relative;
-    top: 100%;
-    width: 20vw;
-    min-width: 200px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    min-width: 400px;
 }
 .likes__link{
     display: flex;
     flex-direction: row;
-    font-size: .5rem;
+    font-size: 1rem;
     font-weight: 10px;
-    color: white;
+    color: black;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -152,8 +125,8 @@ header, .navigation{
 }
 .likes__fig img{
     float: left;
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     border-radius: 30px;
     margin-left: 20px;
 }
@@ -274,7 +247,6 @@ header, .navigation{
 }
 
 .col-3{
-    display:none;
     background-color: white;
     margin: 2rem;
 }
@@ -287,7 +259,7 @@ header, .navigation{
     transform: skewY(-3deg);
 }
 .show{
-    display: block !important;
+    display: none !important;
 }
 
 /*shopping List*/
