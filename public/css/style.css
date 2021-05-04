@@ -215,6 +215,17 @@ header, .navigation{
 .recipe__directions{
     grid-column: 1 / 3;
 }
+.recipe__love{
+    margin-left: 10px;
+}
+.deletecol-2{
+    display: none;
+    position: relative;
+    left: 56%;
+}
+#col-2:hover .deletecol-2{
+    display: block !important;
+}
 
 /*recipe ingredient*/
 .recipe__ingredients{
@@ -320,8 +331,6 @@ header, .navigation{
 }
 
 /*Footer*/
-footer{
-    margin-top: 5px;
-    background-color: #F9F5F3;
-    padding: 10px 25px;
+.footer{
+    margin-top: 20px; padding: 0;
 }
